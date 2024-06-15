@@ -1,0 +1,212 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f0f0f0;
+  padding-bottom: 20px;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+section {
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+#about, #contact {
+  text-align: center;
+}
+
+#about img {
+  width: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  width: calc(33.333% - 2rem);
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: rgb(68, 68, 68);
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.project .skills {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 15px;
+  padding: 10px;
+  gap: 10px;
+}
+
+.skills .skill {
+  background: linear-gradient(to right, rgb(136, 0, 255), rgb(162, 0, 183));
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+  font-weight: bold;
+  padding: 5px 13px;
+}
+
+.skills .firebase {
+  background: linear-gradient(to right, rgb(201, 144, 0), rgb(246, 255, 0));
+}
+
+.skills .react {
+  background: linear-gradient(to right, rgb(0, 178, 184), rgb(0, 255, 247));
+}
+
+.skills .nodejs {
+  background: linear-gradient(to right, rgb(0, 123, 59), rgb(0, 255, 166));
+}
+
+.skills .mongodb {
+  background: linear-gradient(to right, rgb(0, 178, 44), rgb(0, 255, 17));
+}
+
+.skills .django {
+  background: linear-gradient(to right, #333, #E5E5EA);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+form input, form textarea {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  width: 80%;
+  max-width: 500px;
+}
+
+form button {
+  padding: 0.5rem 2rem;
+  background: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #555;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+  }
+
+  .project {
+      width: calc(100% - 2rem);
+      text-align: center;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .project {
+      font-size: 18px;
+      color: rgb(68, 68, 68);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      height: auto;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.child {
+  height: 100px;
+  width: 200px;
+  background-color: #ccc;
+  margin: 10px;
+}
+
+
+/* social media links  */
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.social-link {
+  display: inline-block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-size: 24px;
+  color: #333;
+}
+
+.social-link i {
+  border-radius: 50%;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.social-link:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #007bff;
+}
+
+.email-link {
+  cursor: pointer;
+}

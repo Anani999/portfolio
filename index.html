@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- fontawesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="about">
+    <img src="assets/images/sagar.jpg" alt="Sagar"/>
+    <h1>Hi ,Am Sagar </h1>
+    <p>Passionate Software Engineer</p>
+  </section>
+  <section id="projects">
+    <h1>Projects</h1>
+
+
+    <!-- PROJECTS-->
+
+    <div class="projects">
+      <div onclick="goTo('product1.html')" class="project">
+        <h2>Social Media App </h2>
+        <div class="body">
+          <img src="assets/social-media-app/images/profile.png" alt="Image" />
+          <div>
+            <div class="skills">
+              <div class="skill django"> Django </div>
+            </div>
+            <p>A full fledged social interaction app with core features like <b>Account creation</b> , <b>Profile settings</b> , <b>Follow Unfollow </b>, <b>Feed based on Following </b>, <b>Image and Video posts </b>, <b>Like and Comment on posts </b>, <b>Explore to search and find people</b> </p>
+          </div>
+        </div>
+      </div>
+    
+      <div onclick="goTo('real-time-collaboration.html')" class="project">
+        <h2>Real Time Collaboration Tool </h2>
+        <div class="body">
+          <img src="assets/reatime-collaboration/Screenshot 2024-06-15 at 15-17-28 React App.png" alt="Image" />
+          <div>
+            <div class="skills">
+              <div class="skill firebase"> Firebase </div>
+              <div class="skill react"> React </div>
+            </div>
+            <p>Where multiple users can edit, create, delete, and update docs simultaneously. The changes are shown to all connected users instantly.</p>
+          </div>
+        </div>
+      </div>
+<!--     
+      <div onclick="goTo('job-board.html')" class="project">
+        <h2>Job Board </h2>
+        <div class="body">
+          <img src="assets/images/baby.jpg" alt="Image" />
+          <div>
+            <div class="skills">
+              <div class="skill nodejs"> NodeJs </div>
+              <div class="skill react"> React </div>
+              <div class="skill mongodb"> MongoDB </div>
+            </div>
+            <p>In this project, companies can post jobs and users can apply and track their application status. Implemented authentication using JWT tokens and role-based access to companies and users. Pages are responsive to all types of screens.</p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="project">
+        <h2>Blog Platform</h2>
+        <div class="body">
+          <img src="assets/images/baby.jpg" alt="Image" />
+          <div>
+            <div class="skills">
+              <div class="skill django"> Django </div>
+              <div class="skill react"> React </div>
+            </div>
+            <p>Implemented CRUD operations for blogs. Users can like and comment on blogs. A homepage displays all the blogs, and users can create creator accounts to post blogs with a dashboard to manage their blogs and channel.</p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="project">
+        <h2>Chat Application </h2>
+        <div class="body">
+          <img src="assets/images/baby.jpg" alt="Image" />
+          <div>
+            <div class="skills">
+              <div class="skill firebase"> Firebase </div>
+              <div class="skill react"> React </div>
+            </div>
+            <p>Users can chat in groups and with specific users. All messages are end-to-end encrypted, and even I cannot read the messages between them. Implemented account creation and authentication using JWT.</p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="project">
+        <h2>Weather App</h2>
+        <div class="body">
+          <img src="assets/images/baby.jpg" alt="Image" />
+          <div>
+            <div class="skills">
+              <div class="skill nodejs"> NodeJS </div>
+            </div>
+            <p>Created a weather app using Node and Express which fetches data from an endpoint. Implemented frontend where users can enter the latitude and longitude.</p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="project">
+        <h2>Todo </h2>
+        <div class="body">
+          <img src="assets/images/baby.jpg" alt="Image" />
+          <div>
+            <div class="skills">
+              <div class="skill react"> React </div>
+            </div>
+            <p>Created a simple todo app using React where users can add, delete, and mark their tasks as completed.</p>
+          </div>
+        </div>
+      </div> -->
+    </div>
+    
+
+  </section>
+  <section id="contact">
+    <h1>Contact</h1>
+    <form action="https://formspree.io/f/xknddzoq"
+    method="POST">
+      <input type="text" name="name"  placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" name="message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- <section>
+    <div class="container">
+      <div class="child">1</div>
+      <div class="child">2</div>
+      <div class="child">3</div>
+      <div class="child">4</div>
+      <div class="child">5</div>
+     
+    </div>
+  </section> -->
+  <div class="social-media">
+    <a href="https://www.facebook.com/rasoorisagar.r.sagar/" target="_blank" class="social-link">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://x.com/ananipc18359" target="_blank" class="social-link">
+      <i class="fa-brands fa-twitter"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/sagar-284129282/" target="_blank" class="social-link">
+        <i class="fab fa-linkedin-in"></i>
+    </a>
+    <a href="mailto:ananipc9@gmail.com" class="social-link email-link">
+        <i class="fas fa-envelope"></i>
+    </a>
+    <a href="https://github.com/anani999/" target="_blank" class="social-link ">
+      <i class="fa-brands fa-github"></i>
+    </a>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
