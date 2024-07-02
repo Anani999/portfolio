@@ -12,12 +12,18 @@
 <body>
   <header>
     <nav>
-      <ul>
+      <div class="hamburger-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+    
   </header>
   <section id="about">
     <img src="assets/images/sagar.jpg" alt="Sagar"/>
@@ -31,10 +37,11 @@
     <!-- PROJECTS-->
 
     <div class="projects">
+
       <div onclick="goTo('product1.html')" class="project">
         <h2>Social Media App </h2>
         <div class="body">
-          <img src="assets/social-media-app/images/profile.png" alt="Image" />
+          <img src="assets/social-media-app/home.jpeg" alt="Image" />
           <div>
             <div class="skills">
               <div class="skill django"> Django </div>
@@ -47,16 +54,82 @@
       <div onclick="goTo('real-time-collaboration.html')" class="project">
         <h2>Real Time Collaboration Tool </h2>
         <div class="body">
-          <img src="assets/reatime-collaboration/Screenshot 2024-06-15 at 15-17-28 React App.png" alt="Image" />
+          <img src="assets/reatime-collaboration/home.jpeg" alt="Image" />
           <div>
             <div class="skills">
               <div class="skill firebase"> Firebase </div>
-              <div class="skill react"> React </div>
+              <div class="skill react"> ReactJS </div>
             </div>
             <p>Where multiple users can edit, create, delete, and update docs simultaneously. The changes are shown to all connected users instantly.</p>
           </div>
         </div>
       </div>
+
+      <div onclick="goTo('Discord_home.html')" class="project">
+        <h2>Discord Home Page  </h2>
+        <div class="body">
+          <img src="assets/discord_home/home.jpeg" alt="Image" />
+          <div>
+            <div class="skills">
+              <div class="skill react"> ReactJS </div>
+            </div>
+            <p>Explore a modern and responsive Discord homepage redesign built with React. Experience sleek design elements and seamless responsiveness, showcasing proficiency in UI/UX development and React framework capabilities.</p>
+          </div>
+        </div>
+      </div>
+
+      <div onclick="goTo('quickg_home.html')" class="project">
+        <h2>Quickg Design  </h2>
+        <div class="body">
+          <img src="assets/quickg_home/home.jpeg" alt="Image" />
+          <div>
+            <div class="skills">
+              <div class="skill react"> ReactJS </div>
+            </div>
+            <p>Experience the modern, responsive redesign of QuickG's homepage, crafted using React. This project features a dynamic hero section, user reviews, and a comprehensive footer, ensuring a seamless and engaging user experience across all devices.</p>
+          </div>
+        </div>
+
+      </div>
+        <div onclick="goTo('learn-html.html')" class="project">
+          <h2>HTML Learning App  </h2>
+          <div class="body">
+            <img src="assets/learn-html/home.jpeg" alt="Image" />
+            <div>
+              <div class="skills">
+                <div class="skill flutter"> Flutter </div>
+              </div>
+              <p>I developed a comprehensive HTML learning app using Flutter, designed to help users understand basic to medium-level HTML concepts. The app features a list of various topics, each accompanied by images and practical examples, making it an effective tool for learning and reference.</p>
+            </div>
+          </div>
+        </div>
+          <div onclick="goTo('bookstore_api.html')" class="project">
+            <h2>Bookstore RESTful API  </h2>
+            <div class="body">
+              <img src="assets/bookstore/home.jpeg" alt="Image" />
+              <div>
+                <div class="skills">
+                  <div class="skill nodejs"> NodeJS </div>
+                  <div class="skill mongodb"> MongoDB </div>
+                </div>
+                <p>Developed a Bookstore RESTful API using Node.js, Express, and MongoDB. This project implements CRUD operations for managing authors and books, including the relationships between them.</p>
+              </div>
+            </div>
+          </div>
+
+            <div onclick="goTo('modern_product.html')" class="project">
+              <h2>Modern Product Layout  </h2>
+              <div class="body">
+                <img src="assets/product/home.jpeg" alt="Image" />
+                <div>
+                  <div class="skills">
+                    <div class="skill html"> HTML </div>
+                    <div class="skill css"> CSS </div>
+                  </div>
+                  <p>Experience the modern, responsive redesign of QuickG's homepage, crafted using React. This project features a dynamic hero section, user reviews, and a comprehensive footer, ensuring a seamless and engaging user experience across all devices.</p>
+                </div>
+              </div>
+            </div>
 <!--     
       <div onclick="goTo('job-board.html')" class="project">
         <h2>Job Board </h2>

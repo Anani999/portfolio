@@ -29,3 +29,12 @@
  function goTo(file) {
   window.location.href = 'pages/'+file;
  }
+
+
+//  Hamburger
+
+document.querySelector('.hamburger-menu').addEventListener('click', () => {
+  document.querySelector('.nav-links').classList.toggle('show');
+  document.querySelectorAll('.bar').forEach(bar => bar.classList.toggle('change'));
+});
+
