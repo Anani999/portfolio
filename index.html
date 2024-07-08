@@ -10,238 +10,204 @@
 
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="hamburger-menu">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    
-  </header>
-  <section id="about">
-    <img src="assets/images/sagar.jpg" alt="Sagar"/>
-    <h1>Hi ,Am Sagar </h1>
-    <p>Passionate Software Engineer</p>
-  </section>
-  <section id="projects">
-    <h1>Projects</h1>
-
-
-    <!-- PROJECTS-->
-
-    <div class="projects">
-
-      <div onclick="goTo('product1.html')" class="project">
-        <h2>Social Media App </h2>
-        <div class="body">
-          <img src="assets/social-media-app/home.jpeg" alt="Image" />
-          <div>
-            <div class="skills">
-              <div class="skill django"> Django </div>
+    <div id="particles-js"></div>
+    <div class="content">
+        <!-- Your existing content goes here -->
+        <header>
+          <nav>
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
             </div>
-            <p>A full fledged social interaction app with core features like <b>Account creation</b> , <b>Profile settings</b> , <b>Follow Unfollow </b>, <b>Feed based on Following </b>, <b>Image and Video posts </b>, <b>Like and Comment on posts </b>, <b>Explore to search and find people</b> </p>
-          </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <div id="mobile-menu" class="mobile-menu">
+            <ul>
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </ul>
         </div>
-      </div>
-    
-      <div onclick="goTo('real-time-collaboration.html')" class="project">
-        <h2>Real Time Collaboration Tool </h2>
-        <div class="body">
-          <img src="assets/reatime-collaboration/home.jpeg" alt="Image" />
-          <div>
-            <div class="skills">
-              <div class="skill firebase"> Firebase </div>
-              <div class="skill react"> ReactJS </div>
-            </div>
-            <p>Where multiple users can edit, create, delete, and update docs simultaneously. The changes are shown to all connected users instantly.</p>
-          </div>
-        </div>
-      </div>
+        
+        </header>
+        <section id="about">
+          <img src="assets/images/sagar.jpg" alt="Sagar"/>
+          <h1>Hi ,Am Sagar </h1>
+          <p>I am a quick learner and always use ChatGPT for creating web applications. As a result, I can build things at light speed. My best achievements include deploying my web app in AWS, configuring a custom domain with SSL, creating responsive and engaging web pages using React, and creating backends and RESTful APIs using Express with Node.</p>
+        </section>
 
-      <div onclick="goTo('Discord_home.html')" class="project">
-        <h2>Discord Home Page  </h2>
-        <div class="body">
-          <img src="assets/discord_home/home.jpeg" alt="Image" />
-          <div>
-            <div class="skills">
-              <div class="skill react"> ReactJS </div>
-            </div>
-            <p>Explore a modern and responsive Discord homepage redesign built with React. Experience sleek design elements and seamless responsiveness, showcasing proficiency in UI/UX development and React framework capabilities.</p>
+        <section id="skills">
+          <h2>Skills</h2>
+          <div class="skills-container">
+              <div class="skill-box">HTML</div>
+              <div class="skill-box">CSS</div>
+              <div class="skill-box">JavaScript</div>
+              <div class="skill-box">React</div>
+              <div class="skill-box">Node.js</div>
+              <div class="skill-box">Express</div>
+              <div class="skill-box">AWS</div>
           </div>
-        </div>
-      </div>
+      </section>
+      <section id="projects">
+        <h1>Projects</h1>
 
-      <div onclick="goTo('quickg_home.html')" class="project">
-        <h2>Quickg Design  </h2>
-        <div class="body">
-          <img src="assets/quickg_home/home.jpeg" alt="Image" />
-          <div>
-            <div class="skills">
-              <div class="skill react"> ReactJS </div>
-            </div>
-            <p>Experience the modern, responsive redesign of QuickG's homepage, crafted using React. This project features a dynamic hero section, user reviews, and a comprehensive footer, ensuring a seamless and engaging user experience across all devices.</p>
-          </div>
-        </div>
+        <!-- PROJECTS-->
 
-      </div>
-        <div onclick="goTo('learn-html.html')" class="project">
-          <h2>HTML Learning App  </h2>
-          <div class="body">
-            <img src="assets/learn-html/home.jpeg" alt="Image" />
-            <div>
-              <div class="skills">
-                <div class="skill flutter"> Flutter </div>
+        <div class="projects">
+
+          <div class="project">
+            <h3>Social Media App</h3>
+            <div class="body">
+              <img src="assets/social-media-app/home.jpeg" alt="Image" />
+              <div>
+                <div class="skills">
+                  <div class="skill django">Django</div>
+                </div>
+                <p>A full-fledged social interaction app with core features like account creation, profile settings, and more. Explore to search and find people.</p>
+                <a href="pages/product1.html" class="know-more">Know More</a>
               </div>
-              <p>I developed a comprehensive HTML learning app using Flutter, designed to help users understand basic to medium-level HTML concepts. The app features a list of various topics, each accompanied by images and practical examples, making it an effective tool for learning and reference.</p>
             </div>
           </div>
-        </div>
-          <div onclick="goTo('bookstore_api.html')" class="project">
-            <h2>Bookstore RESTful API  </h2>
+
+          <div class="project">
+            <h3>Real Time Collaboration Tool</h3>
+            <div class="body">
+              <img src="assets/reatime-collaboration/home.jpeg" alt="Image" />
+              <div>
+                <div class="skills">
+                  <div class="skill firebase">Firebase</div>
+                  <div class="skill react">ReactJS</div>
+                </div>
+                <p>Edit, create, delete, and update docs simultaneously with changes shown to all connected users instantly.</p>
+                <a href="pages/real-time-collaboration.html" class="know-more">Know More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <h3>Discord Home Page</h3>
+            <div class="body">
+              <img src="assets/discord_home/home.jpeg" alt="Image" />
+              <div>
+                <div class="skills">
+                  <div class="skill react">ReactJS</div>
+                </div>
+                <p>A modern, responsive Discord homepage redesign built with React, showcasing UI/UX proficiency.</p>
+                <a href="pages/Discord_home.html" class="know-more">Know More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <h3>Quickg Design</h3>
+            <div class="body">
+              <img src="assets/quickg_home/home.jpeg" alt="Image" />
+              <div>
+                <div class="skills">
+                  <div class="skill react">ReactJS</div>
+                </div>
+                <p>Modern, responsive redesign of QuickG's homepage with a dynamic hero section and comprehensive footer.</p>
+                <a href="pages/quickg_home.html" class="know-more">Know More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <h3>HTML Learning App</h3>
+            <div class="body">
+              <img src="assets/learn-html/home.jpeg" alt="Image" />
+              <div>
+                <div class="skills">
+                  <div class="skill flutter">Flutter</div>
+                </div>
+                <p>Comprehensive HTML learning app using Flutter, covering basic to medium-level HTML concepts with practical examples.</p>
+                <a href="pages/learn-html.html" class="know-more">Know More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <h3>Bookstore RESTful API</h3>
             <div class="body">
               <img src="assets/bookstore/home.jpeg" alt="Image" />
               <div>
                 <div class="skills">
-                  <div class="skill nodejs"> NodeJS </div>
-                  <div class="skill mongodb"> MongoDB </div>
+                  <div class="skill nodejs">NodeJS</div>
+                  <div class="skill mongodb">MongoDB</div>
                 </div>
-                <p>Developed a Bookstore RESTful API using Node.js, Express, and MongoDB. This project implements CRUD operations for managing authors and books, including the relationships between them.</p>
+                <p>Bookstore RESTful API using Node.js, Express, and MongoDB for managing authors and books, including relationships.</p>
+                <a href="pages/bookstore_api.html" class="know-more">Know More</a>
               </div>
             </div>
           </div>
 
-            <div onclick="goTo('modern_product.html')" class="project">
-              <h2>Modern Product Layout  </h2>
-              <div class="body">
-                <img src="assets/product/home.jpeg" alt="Image" />
-                <div>
-                  <div class="skills">
-                    <div class="skill html"> HTML </div>
-                    <div class="skill css"> CSS </div>
-                  </div>
-                  <p>Experience the modern, responsive redesign of QuickG's homepage, crafted using React. This project features a dynamic hero section, user reviews, and a comprehensive footer, ensuring a seamless and engaging user experience across all devices.</p>
+          <div class="project">
+            <h3>Modern Product Layout</h3>
+            <div class="body">
+              <img src="assets/product/home.jpeg" alt="Image" />
+              <div>
+                <div class="skills">
+                  <div class="skill html">HTML</div>
+                  <div class="skill css">CSS</div>
                 </div>
+                <p>Modern, responsive redesign of QuickG's homepage with a dynamic hero section and user reviews.</p>
+                <a href="pages/modern_product.html" class="know-more">Know More</a>
               </div>
             </div>
-<!--     
-      <div onclick="goTo('job-board.html')" class="project">
-        <h2>Job Board </h2>
-        <div class="body">
-          <img src="assets/images/baby.jpg" alt="Image" />
-          <div>
-            <div class="skills">
-              <div class="skill nodejs"> NodeJs </div>
-              <div class="skill react"> React </div>
-              <div class="skill mongodb"> MongoDB </div>
-            </div>
-            <p>In this project, companies can post jobs and users can apply and track their application status. Implemented authentication using JWT tokens and role-based access to companies and users. Pages are responsive to all types of screens.</p>
           </div>
-        </div>
-      </div>
-    
-      <div class="project">
-        <h2>Blog Platform</h2>
-        <div class="body">
-          <img src="assets/images/baby.jpg" alt="Image" />
-          <div>
-            <div class="skills">
-              <div class="skill django"> Django </div>
-              <div class="skill react"> React </div>
-            </div>
-            <p>Implemented CRUD operations for blogs. Users can like and comment on blogs. A homepage displays all the blogs, and users can create creator accounts to post blogs with a dashboard to manage their blogs and channel.</p>
-          </div>
-        </div>
-      </div>
-    
-      <div class="project">
-        <h2>Chat Application </h2>
-        <div class="body">
-          <img src="assets/images/baby.jpg" alt="Image" />
-          <div>
-            <div class="skills">
-              <div class="skill firebase"> Firebase </div>
-              <div class="skill react"> React </div>
-            </div>
-            <p>Users can chat in groups and with specific users. All messages are end-to-end encrypted, and even I cannot read the messages between them. Implemented account creation and authentication using JWT.</p>
-          </div>
-        </div>
-      </div>
-    
-      <div class="project">
-        <h2>Weather App</h2>
-        <div class="body">
-          <img src="assets/images/baby.jpg" alt="Image" />
-          <div>
-            <div class="skills">
-              <div class="skill nodejs"> NodeJS </div>
-            </div>
-            <p>Created a weather app using Node and Express which fetches data from an endpoint. Implemented frontend where users can enter the latitude and longitude.</p>
-          </div>
-        </div>
-      </div>
-    
-      <div class="project">
-        <h2>Todo </h2>
-        <div class="body">
-          <img src="assets/images/baby.jpg" alt="Image" />
-          <div>
-            <div class="skills">
-              <div class="skill react"> React </div>
-            </div>
-            <p>Created a simple todo app using React where users can add, delete, and mark their tasks as completed.</p>
-          </div>
-        </div>
-      </div> -->
-    </div>
-    
 
-  </section>
-  <section id="contact">
-    <h1>Contact</h1>
-    <form action="https://formspree.io/f/xknddzoq"
-    method="POST">
-      <input type="text" name="name"  placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" name="message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </section>
+        </div>
+      </section>
 
-  <!-- <section>
-    <div class="container">
-      <div class="child">1</div>
-      <div class="child">2</div>
-      <div class="child">3</div>
-      <div class="child">4</div>
-      <div class="child">5</div>
-     
-    </div>
-  </section> -->
-  <div class="social-media">
-    <a href="https://www.facebook.com/rasoorisagar.r.sagar/" target="_blank" class="social-link">
-        <i class="fab fa-facebook-f"></i>
-    </a>
-    <a href="https://x.com/ananipc18359" target="_blank" class="social-link">
-      <i class="fa-brands fa-twitter"></i>
-    </a>
-    <a href="https://www.linkedin.com/in/sagar-284129282/" target="_blank" class="social-link">
-        <i class="fab fa-linkedin-in"></i>
-    </a>
-    <a href="mailto:ananipc9@gmail.com" class="social-link email-link">
-        <i class="fas fa-envelope"></i>
-    </a>
-    <a href="https://github.com/anani999/" target="_blank" class="social-link ">
-      <i class="fa-brands fa-github"></i>
-    </a>
-  </div>
+        <section id="contact">
+          <h1>Contact</h1>
+          <form action="https://formspree.io/f/xknddzoq"
+          method="POST">
+            <input type="text" name="name"  placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" name="message" required></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </section>
 
+        <!-- <section>
+          <div class="container">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+            <div class="child">5</div>
+          
+          </div>
+        </section> -->
+        <div class="social-media">
+          <a href="https://www.facebook.com/rasoorisagar.r.sagar/" target="_blank" class="social-link">
+              <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://x.com/ananipc18359" target="_blank" class="social-link">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/sagar-284129282/" target="_blank" class="social-link">
+              <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:ananipc9@gmail.com" class="social-link email-link">
+              <i class="fas fa-envelope"></i>
+          </a>
+          <a href="https://github.com/anani999/" target="_blank" class="social-link ">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+      </div>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
   <script src="scripts.js"></script>
+
 </body>
 </html>

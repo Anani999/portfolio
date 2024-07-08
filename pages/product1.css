@@ -2,22 +2,23 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: #121212; /* Dark background */
+    color: #00ff00; /* Neon green text */
 }
 
 .container {
     width: 80%;
     max-width: 800px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: #1e1e1e; /* Dark container background */
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Neon green shadow */
     padding: 20px;
-    margin: 20px auto;  /* Centering the container */
+    margin: 20px auto; /* Centering the container */
     border-radius: 8px;
 }
 
 h1, h2 {
     text-align: center;
-    color: #333;
+    color: #00ff00; /* Neon green */
 }
 
 .gallery {
@@ -30,7 +31,7 @@ h1, h2 {
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 15px;
-    border: 2px solid rgb(0, 0, 0,0.2);
+    border: 2px solid rgba(0, 255, 0, 0.2); /* Neon green border */
 }
 
 .thumbnails {
@@ -52,7 +53,7 @@ h1, h2 {
 }
 
 .thumbnails img:hover {
-    border: 2px solid #000;
+    border: 2px solid #00ff00; /* Neon green border on hover */
 }
 
 .description {
@@ -61,7 +62,7 @@ h1, h2 {
 }
 
 .description h3 {
-    color: #007bff;
+    color: #ff00ff; /* Neon pink */
     margin-top: 15px;
 }
 
@@ -77,13 +78,33 @@ h1, h2 {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
+    background-color: #00ff00; /* Neon green background */
+    color: #121212; /* Dark text */
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
 
 .description a:hover {
-    background-color: #0056b3;
+    background-color: #ff00ff; /* Neon pink on hover */
+    color: #121212; /* Dark text */
+}
+
+/* Ensure project descriptions have a consistent length */
+.project .body p {
+    height: 60px; /* Adjust based on your design needs */
+    overflow: hidden;
+}
+
+/* Style for 'Know More' link */
+.know-more {
+    display: block;
+    margin-top: 10px;
+    color: #00ff00; /* Neon green */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.know-more:hover {
+    color: #ff00ff; /* Neon pink on hover */
 }
