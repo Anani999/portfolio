@@ -3,7 +3,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  
+  font-size: 1.2rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -102,7 +102,7 @@ section {
 
 .project img {
   width: 100%;
-  margin: 0 auto;
+  margin: 10px auto;
   border-radius: 10px;
   object-fit: cover;
   box-shadow: 0 0 10px #ff00ff; /* Neon pink glow */
@@ -277,7 +277,7 @@ form button:hover {
 
 /* Ensure project descriptions have a consistent length */
 .project .body p {
-  height: 60px; /* Adjust based on your design needs */
+  height: 100px; /* Adjust based on your design needs */
   overflow: hidden;
 }
 
@@ -437,4 +437,52 @@ body {
 
  #about {
   background:unset;
+}
+
+/* head */
+.head{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.ongoing{
+  display: flex;
+  align-items: center;
+
+}
+.ongoing .circle{
+  width: 10px;
+  height: 10px;
+  color: rgb(0, 255, 21);
+  box-shadow: 10px 10px 10px lightgreen;
+}
+
+.circle p{
+  font-size: 10px;
+}
+
+
+/* styles.css | http://127.0.0.1:5500/styles.css?_cacheOverride=1720799169223 */
+
+.ongoing {
+  justify-content: space-evenly;
+  gap: 5px;
+}
+
+.head {
+  gap: 20px;
+}
+
+.ongoing .circle {
+  /* color: rgb(0, 255, 21); */
+  /* box-shadow: 10px 10px 10px lightgreen; */
+  background: rgb(1, 255, 22);
+  box-shadow: 0 0 10px #78ff53;
+}
+
+/* Element | http://127.0.0.1:5500/index.html */
+
+.ongoing > p:nth-child(2) {
+  font-size: 0.8rem;
 }

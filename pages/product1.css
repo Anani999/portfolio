@@ -108,3 +108,53 @@ h1, h2 {
 .know-more:hover {
     color: #ff00ff; /* Neon pink on hover */
 }
+
+
+/* head */
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .ongoing{
+    display: flex;
+    align-items: center;
+  
+  }
+  .ongoing .circle{
+    width: 10px;
+    height: 10px;
+    color: rgb(0, 255, 21);
+    box-shadow: 10px 10px 10px lightgreen;
+  }
+  
+  .circle p{
+    font-size: 10px;
+  }
+  
+  
+  /* styles.css | http://127.0.0.1:5500/styles.css?_cacheOverride=1720799169223 */
+  
+  .ongoing {
+    justify-content: space-evenly;
+    gap: 5px;
+  }
+  
+  .head {
+    gap: 20px;
+  }
+  
+  .ongoing .circle {
+    /* color: rgb(0, 255, 21); */
+    /* box-shadow: 10px 10px 10px lightgreen; */
+    background: rgb(1, 255, 22);
+    box-shadow: 0 0 10px #78ff53;
+  }
+  
+  /* Element | http://127.0.0.1:5500/index.html */
+  
+  .ongoing > p:nth-child(2) {
+    font-size: 1rem;
+  }
+  
