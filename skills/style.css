@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0073e6;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+.work-category {
+    margin: 2rem;
+}
+
+.work-category h2 {
+    font-size: 2rem;
+    color: #0073e6;
+}
+
+.project {
+    background-color: white;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.project p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #0073e6;
+    color: white;
+    margin-top: 2rem;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
